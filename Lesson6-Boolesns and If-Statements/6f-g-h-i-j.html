@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Booleans and If-Statements</title>
+</head>
+
+<body>
+  <script>
+    let randomNumber = Math.random()
+    let result = '';
+    let guess = 'heads';
+    if (randomNumber < 0.5) {
+      result = 'heads';
+      console.log(result);
+    } else {
+      result = 'tails';
+      console.log(result);
+    }  
+    if (guess === result) {
+      console.log('You win!');
+    } else {
+      console.log('You lose!');
+    }
+  
+    guess === result ? console.log('You win again!') : console.log('Oops,you lose again!')
+  </script>
+</body>
+
+</html>
