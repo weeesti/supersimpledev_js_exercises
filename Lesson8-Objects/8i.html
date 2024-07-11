@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Objects</title>
+</head>
+
+<body>
+  <button onclick="
+    playGame('heads');
+  ">heads</button>
+
+  <button onclick="
+    playGame('tails');
+  ">tails</button>
+
+  <script>
+    function playGame (guess) {
+      const randomNumber = Math.random();
+      const result = randomNumber < 0.5 ? 'heads' : 'tails';
+      guess === result ? console.log('You win again!') : console.log('Oops,you lose again!')
+    }
+  </script>
+</body>
+
+</html>
